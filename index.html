@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cá viên chiên</title>
+    <style>
+        .TVS {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: orange;
+            background-color: aliceblue;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 50px;
+            text-align: center;
+            font-style: italic;
+            font-stretch: expanded;
+            transition: font-size 0.3s, color 0.3s, background-color 0.3s;
+
+        }
+        .TVS:hover{
+            font-size: 100px;
+            color: rgb(156, 112, 30);
+            background-color: whitesmoke;
+        }
+
+        .TVSlogo {
+            width: 240px;
+            border-radius: 30px;
+            border-style: solid;
+            background-color: burlywood;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .TVSdes {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: orangered;
+            font-weight: bold;
+            font-style: italic;
+            padding: 10px;
+        }
+
+        .img {
+            border-radius: 20px;
+            width: 100%;
+            height: auto;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            background-color: lightblue;
+            padding: 20px;
+            background-image: url('Ca.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left-column {
+            flex: 0 0 250px; /* Fix width of the left column */
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 150px;
+            min-height: 200px;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 30px;
+            
+        }
+        button{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: black;
+            border-radius: 20px;
+            background-color: orange;
+            font-size: 20px;
+            font-weight: 10px;
+            transition: background-color 0.3s,color 0.3s,border 0.3s;
+        }
+        button:hover{
+            color: orange;
+            border: none;
+            background-color: wheat;
+        }
+
+        .product{
+            border-radius: 10px;
+            width: 250px;
+            height: 200px;
+        }
+
+        .inline-block {
+            background-color: lightcoral;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+            flex: 1;
+        }
+        img{
+            transition: width,height,0.5s;
+        }
+        img:hover{
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="TVS">Cá viên Tân Việt Sin</h1>
+
+    <div class="flex-container">
+        
+        <!-- Left column with logo and description -->
+        <div class="left-column">
+            <div class="TVSlogo box">
+                <img class="img" src="TVS.jpg" alt="TVS logo">
+                <p class="TVSdes">
+                    Là thương hiệu lâu đời, chúng tôi luôn mang đến trải nghiệm tốt nhất cho khách hàng với những nguyên liệu tươi ngon nhất.
+                </p>
+            </div>
+        </div>
+
+        <!-- Right column with rows of divs -->
+        <div class="right-column">
+            <div class="row">
+                <!-- First row of divs -->
+                <div class="box">
+                     <img class="product" src="CaVien.jpg">
+                    <a target="_blank" href="https://nguyenlieuhuuphuoc.com/ca-vienn.html">
+                        <button>Mua ngay</button>
+                    </a>
+                </div>
+                <div class="box">
+                    <img class="product" src="CV2.jpg">
+                   <a target="_blank" href="https://nguyenlieuhuuphuoc.com/ca-vienn.html">
+                       <button>Mua ngay</button>
+                   </a> 
+                   </div>
+                   <div class="box">
+                    <img class="product" src="CV3.jpg">
+                   <a target="_blank" href="https://nguyenlieuhuuphuoc.com/ca-vienn.html">
+                       <button>Mua ngay</button>
+                   </a>
+                   </div>
+
+            </div>
+
+            <div class="row">
+                <!-- Second row of divs -->
+                <div class="box">
+                    <img class="product" src="CV4.jpg">
+                    <button>Mua ngay</button>
+                </div>
+                <div class="box">
+                    <img class="product" src="CV6.png">
+                    <button>Mua ngay</button>
+                </div>
+                <div class="box">
+                    <img class="product" src="CV7.jpg">
+                    <button>Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
